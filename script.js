@@ -69,11 +69,11 @@ class Car {
   
  //Declaring a function that accepts two parameters
  function randomIntFromInterval(min,max) { // min and max included
-      // Math.floor leaves only the first digit of a number and dump the rest.
+      // Math.floor leaves only the whole number and dump the decimal.
       // Math.random() generates a random floating point number between 0 and 1.
       // This function will work in the following order:
       // Get the value of max - min + 1. Then multiply the random float.
-      // Then add min. Then leave only the first digit of the number.
+      // Then add min. Then leave only the whole number and dump the decimal.
       return Math.floor(Math.random()*(max-min+1)+min);
  }
   
